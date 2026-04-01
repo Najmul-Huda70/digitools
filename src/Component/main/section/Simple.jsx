@@ -9,7 +9,7 @@ const Simple = () => {
       <p className="text-lg mb-10 text-gray-600">
         Choose the plan that fits your needs. Upgrade or downgrade anytime.
       </p>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {simple.map((item, index) => (
           <div
             key={index}

@@ -3,8 +3,8 @@ import React from "react";
 const Supercharge = () => {
   return (
     <>
-      <div className="  my-18 flex justify-center items-center">
-        <div className="flex  justify-center gap-10">
+      <div className="container mx-auto my-18 flex justify-center items-center">
+        <div className="flex flex-col text-center md:text-start md:flex-row justify-center gap-10">
           <div className="p-4 flex-1 space-y-4">
             <div className="flex w-85 h-10 gap-2 items-center bg-[#E1E7FF]  rounded-full px-4">
               <span className="relative flex h-3 w-3">
@@ -36,7 +36,7 @@ const Supercharge = () => {
             </div>
           </div>
           <div className="flex-1">
-            <img src="../../../assets/banner.png" alt="" />
+            <img src="../../../../src/assets/banner.png" alt="" />
           </div>
         </div>
       </div>

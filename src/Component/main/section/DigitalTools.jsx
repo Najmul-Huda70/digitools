@@ -51,12 +51,12 @@ const DigitalTools = ({ onCardUpdate }) => {
         </div>
         <div className={`${activeId === 1 ? "" : "hidden"}`}>
           <div
-            className={`grid grid-cols-3 gap-5 ${activeId === 1 ? "" : "hidden"}`}
+            className={`grid grid-cols-1 lg:grid-cols-3   gap-5 ${activeId === 1 ? "" : "hidden"}`}
           >
             {data.map((item, index) => (
               <div
                 key={index}
-                className="relative rounded-lg text-start shadow-sm transition-all duration-300 ease-in-out hover:translate-y-0.5 hover:shadow-md shadow-gray-500 p-8 pb-16 space-y-3 "
+                className="relative rounded-lg  shadow-sm  text-center md:text-start transition-all duration-300 ease-in-out hover:translate-y-0.5 hover:shadow-md shadow-gray-500 p-8 pb-16 space-y-3 "
               >
                 <div className="absolute top-3 right-3 bg-amber-200 text-amber-600 rounded-full px-3">
                   {item.tagType}
@@ -68,8 +68,10 @@ const DigitalTools = ({ onCardUpdate }) => {
                   {item.name}
                 </h3>
                 <p className="text-lg text-gray-500">{item.description}</p>
-                <div className="flex text-2xl">
-                  <span className="font-bold">${item.price}</span>
+                <div className="flex  text-center md:text-start text-2xl">
+                  <span className="font-bold  text-center md:text-start">
+                    ${item.price}
+                  </span>
                   <span>/{item.period}</span>
                 </div>
                 {item.features.map((feature, index) => (

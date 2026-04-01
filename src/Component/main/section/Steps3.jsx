@@ -9,7 +9,7 @@ const Steps3 = () => {
       <p className="text-lg mb-10 text-gray-600">
         Start using premium digital tools in minutes, not hours.
       </p>
-      <div className="flex justify-center gap-5 items-center">
+      <div className="flex flex-col lg:flex-row justify-center gap-5 items-center">
         {steps.map((item, index) => (
           <>
             <div
